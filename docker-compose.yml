@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  java-backend:
+    build: ./java-backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./java-backend:/usr/src/app
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/patientdb
+    depends_on:
+      - mongo
+    networks:
+      - my-network
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - my-network
+
+  react-frontend:
+    build: ./react-frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./react-frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - my-network
+
+volumes:
+  mongo-data:
+
+networks:
+  my-network:

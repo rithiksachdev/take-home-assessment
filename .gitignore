@@ -1,0 +1,122 @@
+### Java/Spring ###
+*.class
+*.log
+*.cache
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+java-backend/build/
+# Maven #
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle #
+.gradle/
+build/
+
+# IDE - Eclipse #
+.classpath
+.project
+.settings/
+.springBeans
+
+# IDE - IntelliJ IDEA #
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# IDE - VSCode #
+.vscode/
+
+### Node ###
+# Logs #
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories #
+react-frontend/node_modules/
+jspm_packages/
+
+# Optional npm cache directory #
+.npm
+
+# Optional eslint cache #
+.eslintcache
+
+# Optional REPL history #
+.node_repl_history
+
+# Output of 'npm pack' #
+*.tgz
+
+# Yarn Integrity file #
+.yarn-integrity
+
+# dotenv environment variable files #
+.env
+.env.test
+
+# parcel-bundler cache #
+.cache
+
+# next.js build output #
+.next
+out/
+
+# Nuxt.js build output #
+.nuxt
+dist/
+
+# VuePress build output #
+.vuepress/dist
+
+# Serverless directories #
+.serverless
+
+# FuseBox cache #
+.fusebox/
+
+# DynamoDB Local files #
+.dynamodb/
+
+# TernJS port file #
+.tern-port
+
+# Storybook build outputs #
+storybook-static/
+
+# Compiled TypeScript #
+*.tsbuildinfo
+
+# Browsersync #
+.browsersync
+.browserslistrc
+.babelrc
